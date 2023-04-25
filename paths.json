@@ -1,0 +1,6 @@
+{
+    "javaScriptFilepath": "../",
+    "formsFilepath": "../forms/",
+    "stylesFilepath": "../",
+    "databaseFilepath": "../datenbanken-ef5/"
+}

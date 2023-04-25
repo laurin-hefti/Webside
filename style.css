@@ -1,3 +1,7 @@
+:root{
+  --position-createplandiv: 800px;
+}
+
 .title{
   color: black;
   text-align: center;
@@ -5,7 +9,7 @@
 
 .button {
 /*background-color: darkblue;*/
-color: black;
+  color: black;
   background-color: white;
   border-color: white;
   padding: 15px 32px;
@@ -22,6 +26,27 @@ color: black;
 .button:hover{
   font-size: 20px;
   color: green;
+  /*text-decoration-line: underline;*/
+  /*box-shadow: 0 8px 16px 0 rgba(0,0,100,1), 0 8px 16px 0 rgba(0,0,100,1)*/
+}
+
+.logoutButton{
+  color: black;
+  background-color: white;
+  position: absolute;
+  border-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.logoutButton:hover{
+  font-size: 20px;
+  color: red;
   /*text-decoration-line: underline;*/
   /*box-shadow: 0 8px 16px 0 rgba(0,0,100,1), 0 8px 16px 0 rgba(0,0,100,1)*/
 }
@@ -48,14 +73,120 @@ color: black;
 
 .button_placehodler{
   background-color: white;
-  position:relative;
-  text-align: center;
+  position: relative;
   top: 20px;
   left: 50px;
   width: 100px;
   height: 40px;  
 }
 
+.extended_button_placehodler{
+  background-color: white;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 200px;
+  height: 40px;  
+}
 
+.dynamic_list_placeholder{
+  background-color: white;
+  border-top: 10px;
+  border-color: black;
+  position: absolute;
+  text-align: center;
+  left: 43%;
+  width: 200px;
+}
 
+.playername{
+  text-align: left;
+  margin: 10px;
+}
 
+.teamname{
+  text-align: center;
+  margin: 10px;
+  font-weight:900;
+}
+
+.reihe{
+  float: left;
+  width: 100px;
+  height: 40px;
+  top: 25px;
+  position: relative;
+  text-align: center;
+  left: 27%;
+  margin: 40px;
+}
+
+.displayDataPlaceholder{
+  width: 100%;
+  height: 140px;
+  text-align: center;
+}
+
+.standartButton{
+  background-color: white;
+  text-align: center;
+  margin: 2px;
+}
+
+.buttonsetPlaceholder{
+  position: relative;
+  top: 5px;
+}
+
+.bigPlaceholder{
+  width: 100%;
+  height: 200px;
+}
+
+#addFieldPlaceholder{
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  left: 40px;
+  margin: 10px;
+}
+
+#openGroupPanel{
+  background-color:white;
+  border-color: white;
+  position: absolute;
+  left: 45%;
+  top: 400px;
+  margin: 20px;
+}
+
+#createplandiv{
+  top: var(--position-createplandiv);
+}
+
+#addPlayer{
+  position: relative;
+  right: 30px;
+}
+
+#addPlayerButtondiv{
+  position: relative;
+  top: 30px;
+}
+
+#logoutButtonplaceholder{
+  left: 85%;
+}
+
+#removePlayerButtonPlaceholder{
+  left: 85%;
+}
+
+.leftside{
+  left: 85%;
+}
+
+.inputElement{
+  margin: 5px;
+}

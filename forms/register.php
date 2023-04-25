@@ -5,7 +5,9 @@
     <head>
         <title>Login</title>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <?php
+            require_once("import.php");
+        ?>
     </head>
 
     <body>
@@ -16,10 +18,12 @@
         </div>
 
         <div class="login_input">
-            <input type="text" id="registerPasword" name="name" placeholder="Username" class="login_input_element"><br>
+            <input type="text" id="registerUsername" name="name" placeholder="Username" class="login_input_element"><br>
+            <div class="errorPlaceholder" id="errorDivPlaceholderRegisterUsername"></div>
             <input type="password" id="registerPassword" name="password" placeholder="Password" class="login_input_element"><br>
-            <input type="text" id="RegisterEmailadress" name="emailadresse" placeholder="Emailadresse", class="login_input_element"><br>
-            
+            <div class="errorPlaceholder" id="errorDivPlaceholderRegisterPassword"></div>
+            <input type="text" id="registerEmailadress" name="emailadresse" placeholder="Emailadresse", class="login_input_element"><br>
+            <div class="errorPlaceholder" id="errorDivPlaceholderRegisterEmail"></div>
             <div class="confirme_placeholder">
                 <button class="button" id="confirmRegister">confirm</button>
             </div>
@@ -29,7 +33,8 @@
             <button class="button" id="back_to_login">login</button>
         </div>
 
-        <script src="test.js"></script>
+        <script src="../importfunctions.js"></script>
+        <script src="../register.js"></script>
     </body>
 
     
