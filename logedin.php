@@ -23,8 +23,7 @@
             <button class="button" id="spielplan_buton" onclick="openSpielplan()">Spielplan</button>
         </div>
 
-        <script src="../importfunctions.js"></script>
-        <script src="../logedin.js"></script>
+        <script src="importfunctions.js"></script>
     </body>
 
     

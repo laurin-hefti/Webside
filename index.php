@@ -10,7 +10,7 @@
             require_once("import.php");
         ?>
 
-        <!--<link rel="stylesheet" type="text/css" href= "../.html">-->
+        <!--<link rel="stylesheet" type="text/css" href= "/.html">-->
     </head>
 
     <body>
@@ -24,8 +24,8 @@
             <button class="button" id="test">test</button>
         </div>
 
-        <script src="../importfunctions.js"></script>
-        <script src="../mainform.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="mainform.js"></script>
     </body>
 
     

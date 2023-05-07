@@ -1,0 +1,24 @@
+im moment gibt es einen admin account:
+benutzername: laurin
+password: test
+es ist nicht möglich über die webside einen admin account zu erstellen man muss ihn über die mysql console einfügen.
+
+requesthandler
+Der requesthandeler kordiniert die serveranfragen.
+Dieser bring viele vorteile mit sich, einerseiz sorgt er dafür das nur eine anfrage an den server geschickt wird und andererseitz korordiniert er die datenweiterverarbeitung.
+Syntax:
+requesthandler.sendSingleRequest("getNamePlayer", ["id_player="+id_player], displayPlayer);
+der erste parameter ist die anfrage die an den server geschickt wird, der zweite parameter sind die parameter welche man mitgeben kann, die anzahl der parameter ist unbegrentz,
+und der dritte parameter ist ein funktion, die funktion sollte ein parameter haben, denn dann kann der requesthandeler die daten vom server in die funtkion geben.
+Diese funktion wird nachdem eine antwort fom server zurückgekommen ist ausgeführt. Es gibt die möglichkeit noch einen vierten parameter anzuhängen.
+Diese liste wird dann der funktion als zusätzlicher parameter mitgegeben.
+Es gibt noch die möglichkeit das man anfragen einer warteschlange hinzufügt und das man dann die anfragen nacheinander ausfürhen lässt um nicht verschiedene anfragen zu vermischen.
+
+compiler
+Der compiler kann einen string in javascript in html und css umwandeln.
+Weiteres zur funktion im htmlcompiler reference dokument.
+Damit kann man dynamisch objekte hinzufügen oder löschen. Auch kann man während des generierens mitbestimmen wie das obejkt aussehen sollte.
+Dies macht es einfach wenn man zum beispiel bei einem select tag optionen hinzufügen möchte. Diese optionen sollten die verscheidenen teams sein. jetzt kann man ganz einfach eine
+anfrage an den server schicken und die teams bekommen und dann kann man die optionen einfügen lassen. 
+
+Da es jeztz sonntag 23:53 ist muss ich leider mit dieser anleitung aufhöhren.

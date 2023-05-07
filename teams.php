@@ -26,9 +26,9 @@
         </div>
         
 
-        <script src="../importfunctions.js"></script>
-        <script src="../handleRequest.js"></script>
-        <script src="../teams.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="handleRequest.js"></script>
+        <script src="teams.js"></script>
     </body>
 
     

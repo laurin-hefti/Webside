@@ -13,7 +13,7 @@
     <body>
         <h1 class="title">Plan</h1>
 
-        <script src="../GeneratePlan.js"></script>
+        <script src="GeneratePlan.js"></script>
     </body>
 
     

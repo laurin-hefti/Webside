@@ -27,8 +27,8 @@
 
         
 
-        <script src="../importfunctions.js"></script>
-        <script src="../lehrer.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="lehrer.js"></script>
     </body>
 
     

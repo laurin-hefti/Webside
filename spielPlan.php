@@ -25,8 +25,8 @@
             <button class="button" id="my_team_buton_spielPlan" onclick="openmyTeam()">My Team</button>
         </div>
 
-        <script src="../importfunctions.js"></script>
-        <script src="../scrpts.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="scrpts.js"></script>
     </body>
 
     

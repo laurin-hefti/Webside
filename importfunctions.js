@@ -1,10 +1,11 @@
+//this file contains functions witch are used in other files, mostly functions to open new pages or to create elements
 
 function openLogin() {
     window.location.href = "login.php";
 }
 
 function openMain() {
-    window.location.href = "form.php";
+    window.location.href = "index.php";
 }
 
 function openRegister() {

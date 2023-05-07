@@ -1,4 +1,8 @@
-//Constants
+//this file contains the code for the login page
+//this file is an old file and not updated
+//this file is similar to the register file
+
+//constants
 const buttonBack = document.getElementById("back");
 const buttonRegister = document.getElementById("register");
 const inputElementLoginUsername = document.getElementById("loginName");
@@ -11,10 +15,9 @@ const errorDivPlaceholderLoginPassword = document.getElementById("errorDivPlaceh
 const newErrorDivLoginUsername = document.createElement("div");
 const newErrorDivLoginPassword = document.createElement("div");
 
-var storedLoginData;
-
+//function witch creates the error divs
 function createNewDivLogin(){
-    newErrorDivLoginUsername.classList.add("errorPlaceholder"); //style
+    newErrorDivLoginUsername.classList.add("errorPlaceholder");
     newErrorDivLoginUsername.id = "errorDivLoginUsername";
     errorDivPlaceholderLoginUsername.appendChild(newErrorDivLoginUsername);
     newErrorDivLoginPassword.classList.add("errorPlaceholder");
@@ -22,20 +25,15 @@ function createNewDivLogin(){
     errorDivPlaceholderLoginPassword.appendChild(newErrorDivLoginPassword);
 }
 
+//returns the data in the input elements
 function getLoginData() {
     let username = inputElementLoginUsername.value;
     let password = inputElementLoginPassword.value;
     return [username, password];
 }
 
-function storeLoginData() {
-    let data = getLoginData();
-    storedLoginData = new ImputData(0,data[0],data[1], null);
-}
-
-
+//handels the login event
 function handelLogin(){
-    //storeLoginData();
     let data = getLoginData();
     let x = 1;
     if (data[0] == ""){
@@ -51,6 +49,8 @@ function handelLogin(){
     }
 }
 
+//send the request to the server and cause the error wenn the username or the password is wrong
+//this is an old function and will be replaced in newer files
 function checkLogin(username, password) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -71,10 +71,11 @@ function checkLogin(username, password) {
         }
       }
     };
-    xhttp.open("GET", "/Webside/datenbanken-ef5/handelDatabase.php?request=logedin&username="+username+"&password="+password, true);
+    xhttp.open("GET", "datenbanken-ef5/handelDatabase.php?request=logedin&username="+username+"&password="+password, true);
     xhttp.send();
 }
 
+//olde code
 if (buttonBack && buttonRegister && buttonConfirmLogin) {
     buttonBack.addEventListener("click",openMain);
     buttonRegister.addEventListener("click",openRegister);

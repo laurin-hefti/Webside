@@ -1,4 +1,7 @@
-//Constants
+//this file contains the code for the register page
+//this file is an old file and is not updated with the new funtions and features
+
+//constants
 const buttonBack2 = document.getElementById("back2");
 const buttonLogin2 = document.getElementById("back_to_login");
 const inputElementRegisterUsername = document.getElementById("registerUsername");
@@ -14,8 +17,7 @@ const newErrorDivRegisterUsername = document.createElement("div");
 const newErrorDivRegisterPassword = document.createElement("div");
 const newErrorDivRegisterEmail = document.createElement("div");
 
-var storedRegisterData;
-
+//when a user try to register and dont fill all options out, then a message will apperar, this function create this error div Placeholders
 function createNewDivRegister(){
     newErrorDivRegisterUsername.classList.add("errorPlaceholder");
     newErrorDivRegisterUsername.id = "errorDivRegisterUsername";
@@ -28,6 +30,7 @@ function createNewDivRegister(){
     errorDivPlaceholderRegisterEmail.appendChild(newErrorDivRegisterEmail);
 }
 
+//this function returns the data in the input elements
 function getRegisterData() {
     let username = inputElementRegisterUsername.value;
     let passowrd = inputElementRegisterPassword.value;
@@ -35,14 +38,8 @@ function getRegisterData() {
     return [username, passowrd, email];
 }
 
-
-function storeRegisterDataf() {
-    let data = getRegisterData();
-    storeRegisterData = new ImputData(1,data[0], data[1], data[2]);
-}
-
+//this function handels the register event, so if the user dosnt fill out very option then the error message will apear
 function handelRegister(){
-    //storeRegisterDataf();
     let data = getRegisterData();
     let x = 1;
     if (data[0] == ""){
@@ -62,14 +59,13 @@ function handelRegister(){
     }
 }
 
+//this function sends the request to the server and will cause an error wenn the username is already used
+//this is an old function and will be replaced in other files
 function checkRegister(username, password, email) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        //document.getElementById("test").innerHTML = this.responseText;
-        //console.log(this.responseText);
         let myobj = this.responseText;
-        //console.log(JSON.parse(myobj).data);
         if (JSON.parse(myobj).mes == "1"){
             localStorage.setItem("id_team", JSON.parse(myobj).data);
             openLogedin();
@@ -79,11 +75,11 @@ function checkRegister(username, password, email) {
 
       }
     };
-    xhttp.open("GET", "/Webside/datenbanken-ef5/handelDatabase.php?request=createUser&username="+username+"&password="+password+"&email="+email+"&admin=0", true);
+    xhttp.open("GET", "datenbanken-ef5/handelDatabase.php?request=createUser&username="+username+"&password="+password+"&email="+email+"&admin=0", true);
     xhttp.send();
 }
 
-
+//this code initialises the buttens with the old method
 if (buttonBack2 && buttonLogin2 && buttonConfirmRegister) {
     buttonBack2.addEventListener("click", openMain);
     buttonLogin2.addEventListener("click", openLogin);

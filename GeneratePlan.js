@@ -1,3 +1,7 @@
+//this code is currently not working for larger gorups, you can test it by opening this side on the prowser and look for the prints
+//if it runs around 1000 times the the plan is not correctly generated
+//because the code is not correctly working an not in use I dont comment dis file 
+
 class InputData {
     constructor(teams, felder) {
         this.teams = teams;

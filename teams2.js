@@ -1,7 +1,9 @@
-const addTeamsdiv = document.getElementById("addTeamsdiv");
-var addTeamsdivlist = [];
+//this is an olde file witch contains olde and new code but it show how caotic the old methods was
 
-var requestHandler = new HandelRequest("/Webside/datenbanken-ef5/handelDatabase.php");
+const addTeamsdiv = document.getElementById("addTeamsdiv");
+let addTeamsdivlist = [];
+
+let requestHandler = new HandelRequest("datenbanken-ef5/handelDatabase.php");
 
 
 function handelTeams(teams){
@@ -71,7 +73,7 @@ function getTeams(func) {
         }
       }
     };
-    xhttp.open("GET", "/Webside/datenbanken-ef5/handelDatabase.php?request=getTeams", true);
+    xhttp.open("GET", "datenbanken-ef5/handelDatabase.php?request=getTeams", true);
     xhttp.send();
 }
 
@@ -89,7 +91,7 @@ function getTeamname(id_team) {
         }
       }
     };
-    xhttp.open("GET", "/Webside/datenbanken-ef5/handelDatabase.php?request=getTeamname&id_team="+id_team, true);
+    xhttp.open("GET", "datenbanken-ef5/handelDatabase.php?request=getTeamname&id_team="+id_team, true);
     xhttp.send();
 }
 

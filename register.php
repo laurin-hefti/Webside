@@ -33,8 +33,8 @@
             <button class="button" id="back_to_login">login</button>
         </div>
 
-        <script src="../importfunctions.js"></script>
-        <script src="../register.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="register.js"></script>
     </body>
 
     

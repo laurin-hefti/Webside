@@ -44,9 +44,10 @@
                 <div id="teamname_placeholder">
                     <div id="teamname"></div>
 
-                    <button id="rename_team">
+                    <button id="rename_team" onclick="handelinput()">
                     <!--img-->
                     </button>
+                    <div id="setTeamnamediv"></div>
                 </div>
 
                 <div id="addPlayerdiv"></div>
@@ -59,9 +60,10 @@
             </div>
         </div>
 
-        <script src="../handleRequest.js"></script>
-        <script src="../importfunctions.js"></script>
-        <script src="../myTeam.js"></script>
+        <script src="handleRequest.js"></script>
+        <script src="importfunctions.js"></script>
+        <script src="compiler.js"></script>
+        <script src="myTeam.js"></script>
     </body>
 
     
